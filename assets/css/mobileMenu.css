@@ -1,0 +1,45 @@
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 110; 
+    left: 0;
+    top: 0;
+    background-color: rgba(16, 37, 71, 0.95); 
+    overflow-x: hidden; 
+    transition: 0.4s; 
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #ADC5ED;
+    display: block; 
+    transition: 0.3s; 
+    cursor: pointer;
+  }
+  
+
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+  @media (max-width: 575px) {
+    .overlay .closebtn {
+      right: 15px;
+    }
+  }
+  
+  

@@ -1,0 +1,42 @@
+/* style for playBtn animation  */
+.bg {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    animation: pulse 1.5s ease infinite;
+    background: #4289ff;
+    opacity: 0.2;
+    margin-top: -4px;
+}
+
+.button a {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+@media (max-width: 991px) {
+    .bg{
+        margin-top: -7px;
+    }
+    .button a img {
+        display: inline;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+/* style for playBtn animation  - END*/
